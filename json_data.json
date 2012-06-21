@@ -1,0 +1,38 @@
+
+{
+   "completed_in":0.04,
+   "max_id":215506661459243008,
+   "max_id_str":"215506661459243008",
+   "next_page":"?page=2&max_id=215506661459243008&q=gaga&rpp=1",
+   "page":1,
+   "query":"gaga",
+   "refresh_url":"?since_id=215506661459243008&q=gaga",
+   "results":[
+      {
+         "created_at":"Wed, 20 Jun 2012 18:09:26 +0000",
+         "from_user":"juww_gaga",
+         "from_user_id":271812467,
+         "from_user_id_str":"271812467",
+         "from_user_name":"Juanda Nasa Putra",
+         "geo":null,
+         "id":215506661459243008,
+         "id_str":"215506661459243008",
+         "iso_language_code":"en",
+         "metadata":{
+            "result_type":"recent"
+         },
+         "profile_image_url":"http:\/\/a0.twimg.com\/profile_images\/2325289169\/IMG00344-20120612-1532_normal.jpg",
+         "profile_image_url_https":"https:\/\/si0.twimg.com\/profile_images\/2325289169\/IMG00344-20120612-1532_normal.jpg",
+         "source":"&lt;a href=&quot;http:\/\/omes.ssc&quot; rel=&quot;nofollow&quot;&gt;Omessc&lt;\/a&gt;",
+         "text":"GET MORE FOLLOWERS MY BEST FRIENDS? I WILL FOLLOW YOU BACK IF YOU FOLLOW ME -  http:\/\/t.co\/mZP5jX3Q",
+         "to_user":null,
+         "to_user_id":0,
+         "to_user_id_str":"0",
+         "to_user_name":null
+      }
+   ],
+   "results_per_page":1,
+   "since_id":0,
+   "since_id_str":"0"
+}
+

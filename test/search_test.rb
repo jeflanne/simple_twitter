@@ -5,10 +5,12 @@ require('simple_twitter.rb')
 
 class MockExampleTest < Test::Unit::TestCase
   def test_example_mocking
-    file_name = File.expand_path('../json/gaga.json', File.dirname(__FILE__))
+   t = SimpleTwitter::Search.new
+  file_name = File.expand_path('../json_data.json', File.dirname(__FILE__))
+   File.read(file_name)
     response = stub('response', :body => File.read(file_name))
-    HTTParty.expects(:get).returns(response)
-
-
+  HTTParty.expects(:get).returns(response)
+    r = t.search("gaga")
+    assert(r.is_a?(Hash))
   end
 end

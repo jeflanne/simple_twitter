@@ -2,21 +2,21 @@ module SimpleTwitter
 
   class Search
     TWITTER_SEARCH = "http://search.twitter.com/search.json"
-
-    attr_accessor (:per_page)
     def initialize
       @per_page = 10
+      @lang = "en"
     end
-    def search(query)
+    attr_accessor (:per_page)
+    attr_accessor (:lang)
+   def search(query)
 
       params = {:q => query,
-        :rpp => @per_page,
+        :rpp => per_page, :lang => lang
       }
+      # Added lang parameter to let people choose language filter
       response = HTTParty.get(TWITTER_SEARCH, {:query =>params})
       JSON.parse(response.body)
-      if response.code == 200
-      end
-    end
-
+end
   end
+
 end
