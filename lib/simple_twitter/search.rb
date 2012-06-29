@@ -15,8 +15,9 @@ module SimpleTwitter
       }
       # Added lang parameter to let people choose language filter
       response = HTTParty.get(TWITTER_SEARCH, {:query =>params})
-      JSON.parse(response.body)
-end
+     nasty_hash = JSON.parse(response.body)
+     nasty_hash['results'].map{|r| Tweet.new(r)}
+   end
   end
 
 end

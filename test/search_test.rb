@@ -11,6 +11,7 @@ class MockExampleTest < Test::Unit::TestCase
     response = stub('response', :body => File.read(file_name))
   HTTParty.expects(:get).returns(response)
     r = t.search("gaga")
-    assert(r.is_a?(Hash))
+    assert(r.is_a?(Array))
+    assert(r.all? {|t| t.is_a?(SimpleTwitter::Tweet)})
   end
 end
